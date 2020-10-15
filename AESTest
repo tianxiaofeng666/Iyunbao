@@ -17,8 +17,8 @@ import java.security.SecureRandom;
 public class TestController {
 
     public static void main(String[] args) {
-        String content = "639681745";
-        String password = "VRv8M+e23Q==";
+        String content = "Iyunbao666";
+        String password = "txf317512";
         System.out.println("加密之前：" + content);
 
         // 加密
