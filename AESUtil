@@ -81,6 +81,10 @@ public class AESUtil {
         return AES_decode;
     }
 
+    /**
+      * 测试
+      * @param args
+    */
     public static void main(String[] args) {
         try {
             String content = "Iyunbao666";
