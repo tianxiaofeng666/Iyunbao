@@ -1,0 +1,96 @@
+package com.example.springbootmycat.controller;
+
+public class Test {
+
+    public static void main(String[] args) {
+        int[] aa = new int[] {1,2,2,2,3,4,5,5,5,5,5,6,7,8,9};
+        //查找6在数组中的下标
+        int target = 5;
+        int j = 0;
+        for (int i=0; i < aa.length; i++){
+            j++;
+            if(target == aa[i]){
+                System.out.println("下标： " + i);
+                break;
+            }
+        }
+        System.out.println("for循环次数：" + j);
+        //二分查找算法
+        int index = binarySearch(aa,target);
+        System.out.println("下标： " + index);
+
+
+        int leftIndex = leftBinarySearch(aa,target);
+        System.out.println("左侧边界下标： " + leftIndex);
+
+        int rightIndex = rightBinarySearch(aa,target);
+        System.out.println("右侧边界下标： " + rightIndex);
+
+    }
+
+    //基本二分查找算法
+    public static int binarySearch(int[] aa, int target){
+        int left = 0;
+        int right = aa.length - 1;
+        int j = 0;
+        while(left <= right){
+            j++;
+            int mid = (left + right) /2;
+            if(aa[mid] == target){
+                System.out.println("二分查找循环次数： " + j);
+                return mid;
+            }else if(aa[mid] > target){
+                right = mid - 1;
+            }else if(aa[mid] < target){
+                left = mid + 1;
+            }
+        }
+        return -1;
+    }
+
+    //寻找左侧边界的二分查找
+    public static int leftBinarySearch(int[] aa, int target){
+        int left = 0;
+        int right = aa.length;
+        int j = 0;
+        while (left < right){
+            int mid = (left + right) /2;
+            if(aa[mid] == target){
+                right = mid;
+            }else if(aa[mid] < target){
+                left = mid + 1;
+            }else if(aa[mid] > target){
+                right = mid;
+            }
+            j++;
+        }
+        System.out.println("左侧边界查询次数： " + j);
+        if(left == aa.length){
+            return -1;
+        }
+        return aa[left] == target ? left : -1;
+    }
+
+    //寻找右侧边界的二分查找
+    public static int rightBinarySearch(int[] aa, int target){
+        int left = 0;
+        int right = aa.length;
+        int j = 0;
+        while (left < right){
+            int mid = (left + right) /2;
+            if(aa[mid] == target){
+                left = mid + 1;
+            }else if(aa[mid] < target){
+                left = mid + 1;
+            }else if(aa[mid] > target){
+                right = mid;
+            }
+            j++;
+        }
+        System.out.println("右侧边界查询次数： " + j);
+        if(left == 0){
+            return -1;
+        }
+        return aa[left - 1] == target ? (left-1) : -1;
+    }
+}
