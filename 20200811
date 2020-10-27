@@ -1,59 +1,59 @@
-ÈçºÎÉèÖÃF1-F12¹¦ÄÜ¼ü²»ÐèÒª°´Fn¼ü¾ÍÄÜÓÃ£¿--> °´ÏÂFN+ ¼üÅÌ×óÉÏ½ÇµÄ ESC¼ü ¼´¿É
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F1-F12ï¿½ï¿½ï¿½Ü¼ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Fnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½--> ï¿½ï¿½ï¿½ï¿½FN+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Çµï¿½ ESCï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-±íÌí¼ÓÖ÷¼ü£ºalter table user add primary key (id);£¨Ö÷¼üË÷Òý£©
-Î¨Ò»µÄË÷Òý (Unique Index)£º CREATE UNIQUE INDEX Ë÷ÒýÃû³Æ ON ±íÃû³Æ (ÁÐÃû³Æ) 
-¼òµ¥µÄË÷Òý£ºCREATE INDEX Ë÷ÒýÃû³Æ ON ±íÃû³Æ (ÁÐÃû³Æ)
-Îª¶àÁÐ´´½¨×éºÏË÷Òý£ºCREATE INDEX PersonIndex ON Person (LastName, FirstName) ,×ñÑ­×î×óÇ°×ºÔ­Ôò
-É¾³ýË÷Òý£ºalter table table_name drop index index_name ;
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½alter table user add primary key (id);ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+Î¨Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (Unique Index)ï¿½ï¿½ CREATE UNIQUE INDEX ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ON ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) 
+ï¿½òµ¥µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½CREATE INDEX ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ON ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+Îªï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½CREATE INDEX PersonIndex ON Person (LastName, FirstName) ,ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½Ç°×ºÔ­ï¿½ï¿½
+É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½alter table table_name drop index index_name ;
 
-Ö÷¼üÉèÖÃ×ÔÔö³¤£ºalter table tablename modify id int(11)  auto_increment;
-ÉèÖÃÖ÷¼ü×ÔÔö³¤´Ó1¿ªÊ¼£ºalter table t_user_register_info auto_increment = 1; 
-
-
-queryForMap()  query()  queryForList():²éÑ¯½á¹ûÎª¿Õ£¬²»»áÅ×Òì³£ £¬·µ»Ønull
-queryForObject():²éÑ¯µÄ½á¹û¼¯Îª¿Õ »òÕß > 1, Å×Òì³£
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½alter table tablename modify id int(11)  auto_increment;
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½alter table t_user_register_info auto_increment = 1; 
 
 
-git clone ·þÎñµÄ²Ö¿âµØÖ·  Ô¶³ÌÏîÄ¿¿½±´µ½±¾µØ
-git branch ²é¿´±¾µØ·ÖÖ§
-git branch -a ²é¿´ËùÓÐ±¾µØ¼°Ô¶³Ì²Ö¿â·ÖÖ§
-git checkout dev ÇÐ»»±¾µØ·ÖÖ§
-git reset --hard HEAD^ ±¾µØÍùºó»ØÍËÒ»¸ö°æ±¾  £¬Èç¹ûÒÑÍ¬²½µ½Ô¶³Ì£¬Ô¶³Ì»ØÍË git push --force
-mergeºÏ²¢ÊÇ³åÍ» git reset --hard head
-ÇÐ»»µ½Ô¶³ÌµÄÆäËû·ÖÖ§:
+queryForMap()  query()  queryForList():ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½null
+queryForObject():ï¿½ï¿½Ñ¯ï¿½Ä½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ > 1, ï¿½ï¿½ï¿½ì³£
+
+
+git clone ï¿½ï¿½ï¿½ï¿½Ä²Ö¿ï¿½ï¿½Ö·  Ô¶ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+git branch ï¿½é¿´ï¿½ï¿½ï¿½Ø·ï¿½Ö§
+git branch -a ï¿½é¿´ï¿½ï¿½ï¿½Ð±ï¿½ï¿½Ø¼ï¿½Ô¶ï¿½Ì²Ö¿ï¿½ï¿½Ö§
+git checkout dev ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Ø·ï¿½Ö§
+git reset --hard HEAD^ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½æ±¾  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ì£ï¿½Ô¶ï¿½Ì»ï¿½ï¿½ï¿½ git push --force
+mergeï¿½Ï²ï¿½ï¿½Ç³ï¿½Í» git reset --hard head
+ï¿½Ð»ï¿½ï¿½ï¿½Ô¶ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§:
 1.git checkout -b branchnew origin/branchnew
 2.git branch branchnew origin/branchnew     git checkout branchnew
 
 redis-server.exe redis.windows.conf
 redis-cli.exe -h 127.0.0.1 -p 6379
 
-ideaÉèÖÃÐÂ´°¿Ú´ò¿ªÒ»¸öÏîÄ¿£ºFile --> Settings --> Appearance & Behavior --> System Settings --> ¹´Ñ¡Open project in new window
-Ìí¼ÓÒ»¸öÐÂÏîÄ¿ £ºFile --> Open
-Èç¹û´ò¿ª¶à¸ö´°¿Ú£¬ÇÐ»»ÏîÄ¿£ºFile --> Close Project   (µã»÷XºÅ£¬¿ÉÒÔ´ÓideaÖÐÒÆ³ýÏîÄ¿£¬±¾µØ´ÅÅÌÎÄ¼þ»á±£Áô)
+ideaï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½ï¿½Ú´ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½File --> Settings --> Appearance & Behavior --> System Settings --> ï¿½ï¿½Ñ¡Open project in new window
+ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ ï¿½ï¿½File --> Open
+ï¿½ï¿½ï¿½ï¿½ò¿ª¶ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Ð»ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½File --> Close Project   (ï¿½ï¿½ï¿½Xï¿½Å£ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ideaï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½á±£ï¿½ï¿½)
 
-redisµÄ2ÖÖ¿Í»§¶Ë£º  jedis  lettuce
-    Çø±ð£ºlettuce »ùÓÚNetty NIO À´¹ÜÀíRedisÁ¬½Ó£¬¶àÏß³Ì²¢·¢·ÃÎÊÊ±£¬¶à¸öÏß³Ì¿ÉÒÔ¹²ÏíÍ¬Ò»¸öRedisConnection
-          jedis ÍÆ³öµÄ±È½ÏÔç£¬¶àÏß³Ì²¢·¢·ÃÎÊÊ±£¬Ö»ÓÐÊ¹ÓÃÁ¬½Ó³Ø£¬ÎªÃ¿¸öJedisÊµÀý´´½¨Á¬½Ó
+redisï¿½ï¿½2ï¿½Ö¿Í»ï¿½ï¿½Ë£ï¿½  jedis  lettuce
+    ï¿½ï¿½ï¿½ï¿½lettuce ï¿½ï¿½ï¿½ï¿½Netty NIO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Redisï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ß³Ì²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì¿ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½RedisConnection
+          jedis ï¿½Æ³ï¿½ï¿½Ä±È½ï¿½ï¿½ç£¬ï¿½ï¿½ï¿½ß³Ì²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ö»ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Ó³Ø£ï¿½ÎªÃ¿ï¿½ï¿½JedisÊµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-nacosºÍeureka:×¢²áÖÐÐÄ
+nacosï¿½ï¿½eureka:×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-Æô¶¯±¾µØmongodb·þÎñ£º
-    ÕÒµ½mongodbµÄ°²×°Ä¿Â¼£¬ÔÚbinÄ¿Â¼ÏÂÖ´ÐÐÒÔÏÂÃüÁîÐÐ--> 1£ºmongod --config D:\mongodb\mongo.conf(²»ÐèÒªÈÏÖ¤£¬Ã»ÓÐ·´Ó¦ µ«ÆäÊµÆô¶¯³É¹¦)   mongod --auth --config D:\mongodb\mongo.conf(ÓÃ»§ÈÏÖ¤²Å¿ÉÒÔ²Ù×÷)
-                                                        2: ÖØÐÂ´ò¿ªÒ»¸öÃüÁîÐÐ£¬ÔÚbin Ä¿Â¼ÏÂÖ´ÐÐ mongo(Æô¶¯³É¹¦£¬show dbs ¿ÉÒÔ²é¿´)      Èç¹û¿ªÆôµÇÂ½ÈÏÖ¤£¬
-                                                                                                                                         ·½°¸Ò»£ºmongo -u "adminUser" -p "adminPass" --authenticationDatabase "admin"
-                                                                                                                                         ·½°¸¶þ£º¿Í»§¶ËÁ¬½Óºó£¬ÔÙ½øÐÐÑéÖ¤ µÚÒ»²½£ºuse db   µÚ¶þ²¿£ºdb.auth("username","password")
-mongodbÊý¾Ý¿â´´½¨ÓÃ»§£º
-        db.createUser({user:"ÓÃ»§Ãû",pwd:"ÃÜÂë",roles:[{role:"readWrite",db:"µ±Ç°Êý¾Ý¿â"}]})                                                                                                                                         
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mongodbï¿½ï¿½ï¿½ï¿½
+    ï¿½Òµï¿½mongodbï¿½Ä°ï¿½×°Ä¿Â¼ï¿½ï¿½ï¿½ï¿½binÄ¿Â¼ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½--> 1ï¿½ï¿½mongod --config D:\mongodb\mongo.conf(ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ö¤ï¿½ï¿½Ã»ï¿½Ð·ï¿½Ó¦ ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½)   mongod --auth --config D:\mongodb\mongo.conf(ï¿½Ã»ï¿½ï¿½ï¿½Ö¤ï¿½Å¿ï¿½ï¿½Ô²ï¿½ï¿½ï¿½)
+                                                        2: ï¿½ï¿½ï¿½Â´ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½bin Ä¿Â¼ï¿½ï¿½Ö´ï¿½ï¿½ mongo(ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½show dbs ï¿½ï¿½ï¿½Ô²é¿´)      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½Ö¤ï¿½ï¿½
+                                                                                                                                         ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½mongo -u "adminUser" -p "adminPass" --authenticationDatabase "admin"
+                                                                                                                                         ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óºï¿½ï¿½Ù½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½use db   ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½db.auth("username","password")
+mongodbï¿½ï¿½ï¿½Ý¿â´´ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½
+        db.createUser({user:"ï¿½Ã»ï¿½ï¿½ï¿½",pwd:"ï¿½ï¿½ï¿½ï¿½",roles:[{role:"readWrite",db:"ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ý¿ï¿½"}]})                                                                                                                                         
 
             
-ÅäÖÃÖÐÐÄconfig server ÀûÓÃgithubµÄwebhook»úÖÆÊµÏÖ×Ô¶¯Ë¢ÐÂconfig clientÅäÖÃ£º¼à²âµ½´úÂëpushºó£¬»Øµ÷url: http://localhost:8866/actuator/bus-refresh           
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½config server ï¿½ï¿½ï¿½ï¿½githubï¿½ï¿½webhookï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ô¶ï¿½Ë¢ï¿½ï¿½config clientï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½âµ½ï¿½ï¿½ï¿½ï¿½pushï¿½ó£¬»Øµï¿½url: http://localhost:8866/actuator/bus-refresh           
                                                                                                                                                                                                                                                                       
-Î¢ÐÅ»»ÐÐ£ºShift + Enter                                          
+Î¢ï¿½Å»ï¿½ï¿½Ð£ï¿½Shift + Enter                                          
 
-Ê¹ÓÃspring jdbc ·Àsql×¢Èë£º
-    likeµÄÁ½ÖÖÐ´·¨£º1(?Õ¼Î»·û). like ?   list.add("%" + ** + "%")      2(°ó¶¨²ÎÊý)  like concat('%',:**,'%')       self.productName = paramReplace(self..productName);
+Ê¹ï¿½ï¿½spring jdbc ï¿½ï¿½sql×¢ï¿½ë£º
+    likeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½1(?Õ¼Î»ï¿½ï¿½). like ?   list.add("%" + ** + "%")      2(ï¿½ó¶¨²ï¿½ï¿½ï¿½)  like concat('%',:**,'%')       self.productName = paramReplace(self..productName);
     
-mysqlÊ¹ÓÃleft join ×óÍâÁ¬½Ó£¬ whereÓÒ±íÌõ¼þÎÞÐ§£¬±ä³Éinner join
+mysqlÊ¹ï¿½ï¿½left join ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ whereï¿½Ò±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½inner join
 
 <dependency>
 	<groupId>com.alibaba</groupId>
@@ -67,8 +67,8 @@ mysqlÊ¹ÓÃleft join ×óÍâÁ¬½Ó£¬ whereÓÒ±íÌõ¼þÎÞÐ§£¬±ä³Éinner join
      <optional>true</optional>
 </dependency>
 
-java´úÂëÌí¼ÓÈÕÖ¾´òÓ¡£º
-Ìí¼ÓÒÀÀµ£º
+javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½Ó¡ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
@@ -78,72 +78,72 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 private final static Logger logger = LoggerFactory.getLogger(**.class);
-logger.info("Èë²Î£º{},·µ»Ø½á¹û£º{}",accountId,shopCode);
+logger.info("ï¿½ï¿½Î£ï¿½{},ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½ï¿½{}",accountId,shopCode);
 
-JSONObject½âÎöÈë²ÎÖÐµÄlist:
+JSONObjectï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½list:
     JSONArray accountIdList = json.getJSONArray("accountIdList");
     List<Long> idList = JSONObject.parseArray(c.getJSONArray("accountIdList").toJSONString(), Long.class);
 
-gitÉÏ´«±¨´í×Ü½á£º
-    1.ÌáÊ¾³ö´íÐÅÏ¢£ºfatal: remote origin already exists.
-        ½â¾ö°ì·¨ÈçÏÂ£º
-            1¡¢ÏÈÊäÈë git remote rm origin
-            2¡¢ÔÙÊäÈë git remote add origin  https://github.com/(user_name)/(app_name).git ¾Í²»»á±¨´íÁË£¡
-    2.Permission denied£¨publickey£©
-         ½â¾ö°ì·¨ÈçÏÂ£ºssh-keygen -t rsa -C"sec***@163.com" 
-    3.±¨´í failed to push some refs to ¡®git@github.com:xxx/xxx.git¡®(Ô­Òò£º±¾µØ²Ö¿âÃ»ÓÐREADME.mdÎÄ¼þ)  
-         ½â¾ö°ì·¨ÈçÏÂ£ºgit pull --rebase origin master °Ñ´úÂëºÏ²¢ £¬ÔÙÖ´ÐÐgit push origin master 
-D:/spring-bootÄ¿Â¼¶ÔÓ¦githubÔ¶³Ì²Ö¿âspring-boot,°ÑÏîÄ¿·Åµ½±¾µØspring-bootÄ¿Â¼ÏÂ£¬git add . --> git commit -m '' --> git push Ìá½»µ½Ô¶³Ì
+gitï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü½á£º
+    1.ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½fatal: remote origin already exists.
+        ï¿½ï¿½ï¿½ï¿½ì·¨ï¿½ï¿½ï¿½Â£ï¿½
+            1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ git remote rm origin
+            2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ git remote add origin  https://github.com/(user_name)/(app_name).git ï¿½Í²ï¿½ï¿½á±¨ï¿½ï¿½ï¿½Ë£ï¿½
+    2.Permission deniedï¿½ï¿½publickeyï¿½ï¿½
+         ï¿½ï¿½ï¿½ï¿½ì·¨ï¿½ï¿½ï¿½Â£ï¿½ssh-keygen -t rsa -C"sec***@163.com" 
+    3.ï¿½ï¿½ï¿½ï¿½ failed to push some refs to ï¿½ï¿½git@github.com:xxx/xxx.gitï¿½ï¿½(Ô­ï¿½ò£º±ï¿½ï¿½Ø²Ö¿ï¿½Ã»ï¿½ï¿½README.mdï¿½Ä¼ï¿½)  
+         ï¿½ï¿½ï¿½ï¿½ì·¨ï¿½ï¿½ï¿½Â£ï¿½git pull --rebase origin master ï¿½Ñ´ï¿½ï¿½ï¿½Ï²ï¿½ ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½git push origin master 
+D:/spring-bootÄ¿Â¼ï¿½ï¿½Ó¦githubÔ¶ï¿½Ì²Ö¿ï¿½spring-boot,ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Åµï¿½ï¿½ï¿½ï¿½ï¿½spring-bootÄ¿Â¼ï¿½Â£ï¿½git add . --> git commit -m '' --> git push ï¿½á½»ï¿½ï¿½Ô¶ï¿½ï¿½
 
-git checkout -b ·ÖÖ§Ãû  --> ±¾µØ´´½¨¸Ã·ÖÖ§²¢ÇÐ»»µ½¸Ã·ÖÖ§
+git checkout -b ï¿½ï¿½Ö§ï¿½ï¿½  --> ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ï¿½Ã·ï¿½Ö§ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Ã·ï¿½Ö§
 git add .
 git commit -m ''
-git push --set-upstream origin ·ÖÖ§Ãû£¨Ê×´Î±¾µØ·ÖÖ§Í¬²½Ô¶³Ì£©  -->Ìá½»±¾µØ·ÖÖ§µ½Ô¶³Ì£¬Ô¶³Ì·ÖÖ§Ìí¼Ó³É¹¦
+git push --set-upstream origin ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½×´Î±ï¿½ï¿½Ø·ï¿½Ö§Í¬ï¿½ï¿½Ô¶ï¿½Ì£ï¿½  -->ï¿½á½»ï¿½ï¿½ï¿½Ø·ï¿½Ö§ï¿½ï¿½Ô¶ï¿½Ì£ï¿½Ô¶ï¿½Ì·ï¿½Ö§ï¿½ï¿½Ó³É¹ï¿½
 
 
-spring-cloud-zuulÍø¹Ø£º
-        filterÊÇzuulµÄºËÐÄ£¬ÓÐ4ÖÖÀàÐÍ£¬ Ö§³Ö×Ô¶¨Òåfilter,ÐèÒª¼Ì³ÐZuulFilter
-               pre(ÇëÇó±»Â·ÓÉÖ®Ç°µ÷ÓÃ)
-               routing(½«ÇëÇóÂ·ÓÉµ½Î¢·þÎñ)
-               post(Â·ÓÉµ½Î¢·þÎñÒÔºóÖ´ÐÐ£¬½«ÏìÓ¦´ÓÎ¢·þÎñ·¢ËÍ¸ø¿Í»§¶Ë)
-               error(±¨´íÊ±Ö´ÐÐ)
+spring-cloud-zuulï¿½ï¿½ï¿½Ø£ï¿½
+        filterï¿½ï¿½zuulï¿½Äºï¿½ï¿½Ä£ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ Ö§ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½filter,ï¿½ï¿½Òªï¿½Ì³ï¿½ZuulFilter
+               pre(ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½)
+               routing(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½Éµï¿½Î¢ï¿½ï¿½ï¿½ï¿½)
+               post(Â·ï¿½Éµï¿½Î¢ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½Ö´ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Î¢ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½Í»ï¿½ï¿½ï¿½)
+               error(ï¿½ï¿½ï¿½ï¿½Ê±Ö´ï¿½ï¿½)
 
-linux ²é¿´ÈÕÖ¾Ö¸Áî£º
-    1. tail -f ***.log  ²éÑ¯ÊµÊ±ÈÕÖ¾£¬Ä¬ÈÏ×îºó10ÐÐ    tail -n 20 filename (ÏÔÊ¾filename×îºó20ÐÐ)
-        ctrl+c ÍË³ötailÃüÁî
-    2. ËÑË÷¹Ø¼ü×Ö¸½½üµÄÈÕÖ¾
-        cat -n filename |grep "¹Ø¼ü×Ö"
-    3. ½øÈë±à¼­²éÕÒ:vi(vim)
-        1¡¢½øÈëvim±à¼­Ä£Ê½:vim filename
-        2¡¢ÊäÈë¡°/¹Ø¼ü×Ö¡±,°´enter¼ü²éÕÒ
-        3¡¢²éÕÒÏÂÒ»¸ö,°´¡°n¡±¼´¿É
-            ÍË³ö:°´ESC¼üºó,½Ó×ÅÔÙÊäÈë:ºÅÊ±,vi»áÔÚÆÁÄ»µÄ×îÏÂ·½µÈ´ýÎÒÃÇÊäÈëÃüÁî
-            wq! ±£´æÍË³ö;
-            q! ²»±£´æÍË³ö;
-     4.·ÖÒ³²é¿´
-        more ***.log  ctrl+f:ÏòÏÂ¹ö¶¯Ò»Ò³  »Ø³µ¼ü£ºÏòÏÂÒÆ¶¯Ò»ÐÐ    ¿Õ¸ñ¼ü£ºÏòÏÂÒÆ¶¯Ò»Ò³    q£ºÍË³ömore
+linux ï¿½é¿´ï¿½ï¿½Ö¾Ö¸ï¿½î£º
+    1. tail -f ***.log  ï¿½ï¿½Ñ¯ÊµÊ±ï¿½ï¿½Ö¾ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½10ï¿½ï¿½    tail -n 20 filename (ï¿½ï¿½Ê¾filenameï¿½ï¿½ï¿½20ï¿½ï¿½)
+        ctrl+c ï¿½Ë³ï¿½tailï¿½ï¿½ï¿½ï¿½
+    2. ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
+        cat -n filename |grep "ï¿½Ø¼ï¿½ï¿½ï¿½"
+    3. ï¿½ï¿½ï¿½ï¿½à¼­ï¿½ï¿½ï¿½ï¿½:vi(vim)
+        1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vimï¿½à¼­Ä£Ê½:vim filename
+        2ï¿½ï¿½ï¿½ï¿½ï¿½ë¡°/ï¿½Ø¼ï¿½ï¿½Ö¡ï¿½,ï¿½ï¿½enterï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            ï¿½Ë³ï¿½:ï¿½ï¿½ESCï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½Ê±,viï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            wq! ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½;
+            q! ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½;
+     4.ï¿½ï¿½Ò³ï¿½é¿´
+        more ***.log  ctrl+f:ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½Ò»Ò³  ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ò»ï¿½ï¿½    ï¿½Õ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ò»Ò³    qï¿½ï¿½ï¿½Ë³ï¿½more
 
-kafka windows»·¾³ÏÂÆô¶¯£º D:\kafka\kafka_2.12-2.3.0\bin\windows
-    kafka server£ºkafka-server-start.bat ..\..\config\server.properties
-    ´´½¨topic: kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic testDemo
-    ²é¿´topic: kafka-topics.bat --list --zookeeper localhost:2181
-    ²é¿´Ä³¸ötopic·ÖÇø¸±±¾ÏêÇé£ºkafka-topics.bat --zookeeper localhost:2181 --describe --topic testDemo
-    ´ò¿ªProducer: kafka-console-producer.bat --broker-list localhost:9092 --topic testDemo
-    ´ò¿ªconsumer: kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic testDemo (--from-beginning)¿ÉÊ¡ÂÔ   zookeeper¸ß°æ±¾ÐèÒªÕâÑùÐ´¨Cbootstrap-server
+kafka windowsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ D:\kafka\kafka_2.12-2.3.0\bin\windows
+    kafka serverï¿½ï¿½kafka-server-start.bat ..\..\config\server.properties
+    ï¿½ï¿½ï¿½ï¿½topic: kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic testDemo
+    ï¿½é¿´topic: kafka-topics.bat --list --zookeeper localhost:2181
+    ï¿½é¿´Ä³ï¿½ï¿½topicï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£ºkafka-topics.bat --zookeeper localhost:2181 --describe --topic testDemo
+    ï¿½ï¿½Producer: kafka-console-producer.bat --broker-list localhost:9092 --topic testDemo
+    ï¿½ï¿½consumer: kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic testDemo (--from-beginning)ï¿½ï¿½Ê¡ï¿½ï¿½   zookeeperï¿½ß°æ±¾ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ð´ï¿½Cbootstrap-server
 
-    kafka producer ·¢ËÍÏûÏ¢·ÖÇøÑ¡Ôñ²ßÂÔ£º»á¸ù¾Ý·ÖÇø¹æÔòÑ¡Ôñ°ÑÏûÏ¢´æ´¢µ½ÄÄ¸ö·ÖÇøÖÐ£¬Ö»ÒªÈç¹û·ÖÇø¹æÔòÉèÖÃµÄºÏÀí£¬ÄÇÃ´ËùÓÐµÄÏûÏ¢½«»á±»¾ùÔÈµÄ·Ö²¼µ½²»Í¬µÄ·ÖÇøÖÐ,
-                                       ÕâÑù¾ÍÊµÏÖÁË¸ºÔØ¾ùºâºÍË®Æ½À©Õ¹
-            1.Ö¸¶¨·ÖÇø£¬´ËÊ±key²»Æð×÷ÓÃ    new ProducerRecord(topic, partition, key, data)
-            2.²»Ö¸¶¨·ÖÇø£¬ÓÖ¿ÉÒÔ·ÖÁ½ÖÖÇé¿ö£¬Ö¸¶¨key,²»Ö¸¶¨Key£¬keyµÄ×÷ÓÃÊÇÎªÏûÏ¢Ñ¡Ôñ´æ´¢·ÖÇø
-                2.1 Ö¸¶¨key  new ProducerRecord(topic, key, data);  ¸ù¾ÝkeyµÄhashÖµÓë·ÖÇøÊýÈ¡Ä£À´¾ö¶¨Êý¾Ý´æ´¢µ½ÄÇ¸ö·ÖÇø
+    kafka producer ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½æ´¢ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½Ö»Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÃµÄºï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½á±»ï¿½ï¿½ï¿½ÈµÄ·Ö²ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½,
+                                       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ë¸ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½ï¿½Ë®Æ½ï¿½ï¿½Õ¹
+            1.Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±keyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    new ProducerRecord(topic, partition, key, data)
+            2.ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½key,ï¿½ï¿½Ö¸ï¿½ï¿½Keyï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ï¢Ñ¡ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½
+                2.1 Ö¸ï¿½ï¿½key  new ProducerRecord(topic, key, data);  ï¿½ï¿½ï¿½ï¿½keyï¿½ï¿½hashÖµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½
                 2.2 key=null, new ProducerRecord(topic, data);
-                        Kafka²¢²»ÊÇÃ¿ÌõÏûÏ¢¶¼Ëæ»úÑ¡ÔñÒ»¸öPartition,ÏÈ´Ó»º´æÖÐÈ¡·ÖÇøºÅ£¬È»ºóÅÐ¶Ï»º´æµÄÖµÊÇ·ñÎª¿Õ£¬Èç¹û²»Îª¿Õ£¬¾Í½«ÏûÏ¢´æµ½Õâ¸ö·ÖÇø£¬
-                    µ±»º´æ¹ýÊ±Ö®ºó,ÖØÐÂ¼ÆËãÒª´æ´¢µÄ·ÖÇø£¬²¢½«·ÖÇøºÅ»º´æÆðÀ´£¬¹©ÏÂ´ÎÊ¹ÓÃ
+                        Kafkaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½Partition,ï¿½È´Ó»ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½È»ï¿½ï¿½ï¿½Ð¶Ï»ï¿½ï¿½ï¿½ï¿½Öµï¿½Ç·ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½Í½ï¿½ï¿½ï¿½Ï¢ï¿½æµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Ö®ï¿½ï¿½,ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Òªï¿½æ´¢ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½Ê¹ï¿½ï¿½
 
-redisÊµÏÖ·Ö²¼Ê½Ëø£¬ÓÉÓÚsetnxºÍexpire£¨ÉèÖÃ³¬Ê±Ê±¼ä£©²»ÊÇÔ­×Ó²Ù×÷£¬µ±setnx³É¹¦ºó£¬rediså´µô£¬Ôò´ËËøÎÞ·¨ÊÍ·Åµô£¬Òò´Ë2.6.12°æ±¾ºó£¬Ê¹ÓÃsetÖ¸Áî£¬Í¨¹ý²ÎÊýÀ´ÊµÏÖsetnx¹¦ÄÜ¡£
-    £¨key,value,nxxx,expx,time£©: nx-²»´æÔÚÊ±ÉèÖÃ  ex-Ãë  px-ºÁÃë
+redisÊµï¿½Ö·Ö²ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½setnxï¿½ï¿½expireï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½Ê±Ê±ï¿½ä£©ï¿½ï¿½ï¿½ï¿½Ô­ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½setnxï¿½É¹ï¿½ï¿½ï¿½rediså´µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½Í·Åµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6.12ï¿½æ±¾ï¿½ï¿½Ê¹ï¿½ï¿½setÖ¸ï¿½î£¬Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½setnxï¿½ï¿½ï¿½Ü¡ï¿½
+    ï¿½ï¿½key,value,nxxx,expx,timeï¿½ï¿½: nx-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½  ex-ï¿½ï¿½  px-ï¿½ï¿½ï¿½ï¿½
 
-ÐèÒªÓÃµ½Base64,ÒýÈëÒÀÀµ
+ï¿½ï¿½Òªï¿½Ãµï¿½Base64,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public static byte[] decode(String base64) throws Exception {
     return Base64.decodeBase64(base64.getBytes());
 }
