@@ -78,6 +78,10 @@ public class RSAUtil {
 
     /**
      * 公钥加密
+     * 注意：使用同一个公钥对待处理的数据进行多次加密，每次得到加密后的结果都是不一样的
+     *   这是因为使用RSA私钥进行签名还是公钥进行加密，都需要对待处理的数据先进行填充，再对填充后的数据进行加密处理。 公钥加密时，使用伪随机的16进制字符串进行填充，
+     *              每次填充的伪随机数都是不一样的，所以每次加密得到的结果就不一样了
+     *      https://blog.csdn.net/guyongqiangx/article/details/74930951        
      */
     public static String encryptByPublicKey(String content, String publicKey, String charset) throws Exception {
         byte[] data = content.getBytes(charset);
@@ -148,8 +152,8 @@ public class RSAUtil {
      *            加密数据
      * @param privateKey
      *            私钥
-     * @return
-     * @throws Exception
+     * 使用同一私钥进行多次加密，得到的结果都是相同的
+     *   私钥加密时，填充的内容都是FF， 每次填充的内容都是一样的，加密得到的结果也是一样的
      */
     public static String encryptByPrivateKey(String content, String privateKey, String charset) throws Exception {
         byte[] data = content.getBytes(charset);
